@@ -10,7 +10,7 @@ def get_ip_info():
         if data["status"] == "success":
             print(f"🌐 IP Address: {data['query']}")
             print(f"📍 Location  : {data['city']}, {data['regionName']}, {data['country']}")
-            print(f"🏢 ISP       : {data['isp']}")
+            print(f"🏢 Internet service provider       : {data['isp']}")
             print(f"🛰️  Lat/Lon  : {data['lat']}, {data['lon']}")
         else:
             print("Failed to fetch IP info.")
